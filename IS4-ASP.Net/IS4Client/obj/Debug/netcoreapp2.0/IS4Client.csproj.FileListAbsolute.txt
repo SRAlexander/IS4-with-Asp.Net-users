@@ -1,0 +1,11 @@
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\bin\Debug\netcoreapp2.0\IS4Client.deps.json
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\bin\Debug\netcoreapp2.0\IS4Client.runtimeconfig.json
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\bin\Debug\netcoreapp2.0\IS4Client.runtimeconfig.dev.json
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\bin\Debug\netcoreapp2.0\IS4Client.dll
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\bin\Debug\netcoreapp2.0\IS4Client.pdb
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\obj\Debug\netcoreapp2.0\IS4Client.csprojResolveAssemblyReference.cache
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\obj\Debug\netcoreapp2.0\IS4Client.csproj.CoreCompileInputs.cache
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\obj\Debug\netcoreapp2.0\IS4Client.AssemblyInfoInputs.cache
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\obj\Debug\netcoreapp2.0\IS4Client.AssemblyInfo.cs
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\obj\Debug\netcoreapp2.0\IS4Client.dll
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Client\obj\Debug\netcoreapp2.0\IS4Client.pdb
