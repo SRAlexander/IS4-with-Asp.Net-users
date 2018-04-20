@@ -243,7 +243,7 @@ namespace IS4Server.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Logout(string logoutId = "")
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");

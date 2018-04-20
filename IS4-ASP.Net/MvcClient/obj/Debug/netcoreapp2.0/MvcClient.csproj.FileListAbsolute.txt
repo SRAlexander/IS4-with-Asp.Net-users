@@ -3,7 +3,6 @@ C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\bin\Debug\netcoreapp2.0\MvcClient.runtimeconfig.dev.json
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\bin\Debug\netcoreapp2.0\MvcClient.dll
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\bin\Debug\netcoreapp2.0\MvcClient.pdb
-C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\obj\Debug\netcoreapp2.0\MvcClient.csprojResolveAssemblyReference.cache
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\obj\Debug\netcoreapp2.0\MvcClient.csproj.CoreCompileInputs.cache
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\obj\Debug\netcoreapp2.0\MvcClient.AssemblyInfoInputs.cache
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\MvcClient\obj\Debug\netcoreapp2.0\MvcClient.AssemblyInfo.cs

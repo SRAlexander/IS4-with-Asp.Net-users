@@ -5,6 +5,52 @@
     <UserSecretsId>aspnet-IS4Server-B7F5B83B-6280-4CDA-9DF7-75659D7540DB</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\AccountController.cs" />
+    <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Controllers\ManageController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwrootold\css\site.css" />
+    <Content Include="wwwrootold\css\site.min.css" />
+    <Content Include="wwwrootold\favicon.ico" />
+    <Content Include="wwwrootold\images\banner1.svg" />
+    <Content Include="wwwrootold\images\banner2.svg" />
+    <Content Include="wwwrootold\images\banner3.svg" />
+    <Content Include="wwwrootold\images\banner4.svg" />
+    <Content Include="wwwrootold\js\site.js" />
+    <Content Include="wwwrootold\js\site.min.js" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="wwwrootold\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="wwwrootold\lib\bootstrap\LICENSE" />
+    <Content Include="wwwrootold\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="wwwrootold\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="wwwrootold\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="wwwrootold\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="wwwrootold\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="wwwrootold\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="wwwrootold\lib\jquery-validation\LICENSE.md" />
+    <Content Include="wwwrootold\lib\jquery\dist\jquery.js" />
+    <Content Include="wwwrootold\lib\jquery\dist\jquery.min.js" />
+    <Content Include="wwwrootold\lib\jquery\dist\jquery.min.map" />
+    <Content Include="wwwrootold\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="IdentityServer4" Version="2.2.0" />
@@ -12,12 +58,57 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" PrivateAssets="All" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.2" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Account\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ViewsOld\Account\AccessDenied.cshtml" />
+    <None Include="ViewsOld\Account\ConfirmEmail.cshtml" />
+    <None Include="ViewsOld\Account\ExternalLogin.cshtml" />
+    <None Include="ViewsOld\Account\ForgotPassword.cshtml" />
+    <None Include="ViewsOld\Account\ForgotPasswordConfirmation.cshtml" />
+    <None Include="ViewsOld\Account\Lockout.cshtml" />
+    <None Include="ViewsOld\Account\Login.cshtml" />
+    <None Include="ViewsOld\Account\LoginWith2fa.cshtml" />
+    <None Include="ViewsOld\Account\LoginWithRecoveryCode.cshtml" />
+    <None Include="ViewsOld\Account\Register.cshtml" />
+    <None Include="ViewsOld\Account\ResetPassword.cshtml" />
+    <None Include="ViewsOld\Account\ResetPasswordConfirmation.cshtml" />
+    <None Include="ViewsOld\Account\SignedOut.cshtml" />
+    <None Include="ViewsOld\Home\About.cshtml" />
+    <None Include="ViewsOld\Home\Contact.cshtml" />
+    <None Include="ViewsOld\Home\Index.cshtml" />
+    <None Include="ViewsOld\Manage\ChangePassword.cshtml" />
+    <None Include="ViewsOld\Manage\Disable2fa.cshtml" />
+    <None Include="ViewsOld\Manage\EnableAuthenticator.cshtml" />
+    <None Include="ViewsOld\Manage\ExternalLogins.cshtml" />
+    <None Include="ViewsOld\Manage\GenerateRecoveryCodes.cshtml" />
+    <None Include="ViewsOld\Manage\Index.cshtml" />
+    <None Include="ViewsOld\Manage\ResetAuthenticator.cshtml" />
+    <None Include="ViewsOld\Manage\SetPassword.cshtml" />
+    <None Include="ViewsOld\Manage\ShowRecoveryCodes.cshtml" />
+    <None Include="ViewsOld\Manage\TwoFactorAuthentication.cshtml" />
+    <None Include="ViewsOld\Manage\_Layout.cshtml" />
+    <None Include="ViewsOld\Manage\_ManageNav.cshtml" />
+    <None Include="ViewsOld\Manage\_StatusMessage.cshtml" />
+    <None Include="ViewsOld\Manage\_ViewImports.cshtml" />
+    <None Include="ViewsOld\Shared\Error.cshtml" />
+    <None Include="ViewsOld\Shared\_Layout.cshtml" />
+    <None Include="ViewsOld\Shared\_LoginPartial.cshtml" />
+    <None Include="ViewsOld\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="ViewsOld\_ViewImports.cshtml" />
+    <None Include="ViewsOld\_ViewStart.cshtml" />
   </ItemGroup>
 
 </Project>
