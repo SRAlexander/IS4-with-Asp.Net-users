@@ -74,8 +74,8 @@ namespace IS4Server.IS4
                         new Secret("secret".Sha256())
                     },
 
-                    RedirectUris = { "http://localhost:5002/signin-oidc" },
-                    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+                    RedirectUris = { "https://localhost:44362/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:44362/signout-callback-oidc" },
 
                     AllowedScopes =
                     {
