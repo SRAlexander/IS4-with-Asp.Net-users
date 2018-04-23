@@ -68,7 +68,7 @@ namespace IS4Server.IS4
                     AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
 
                     RequireConsent = false,
-
+                    AllowAccessTokensViaBrowser = true,
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())

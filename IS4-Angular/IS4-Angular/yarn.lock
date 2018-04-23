@@ -318,6 +318,10 @@ amqplib@^0.5.2:
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
 
+angular2-jwt@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.npmjs.org/angular2-jwt/-/angular2-jwt-0.2.3.tgz#54efdda3ceedba85f6a37b165f22ac22b8adf021"
+
 ansi-html@0.0.7:
   version "0.0.7"
   resolved "https://registry.npmjs.org/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
@@ -3668,6 +3672,10 @@ jsprim@^1.2.2:
 jsrsasign@^5.0.7:
   version "5.1.0"
   resolved "https://registry.npmjs.org/jsrsasign/-/jsrsasign-5.1.0.tgz#2549d559674f6f8956b12bd7f3b5c066b4e0c6ba"
+
+jwt-decode@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/jwt-decode/-/jwt-decode-2.2.0.tgz#7d86bd56679f58ce6a84704a657dd392bba81a79"
 
 karma-chrome-launcher@~2.2.0:
   version "2.2.0"
