@@ -12,6 +12,15 @@ namespace MvcClient
             services.AddMvc();
 
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("default", policy =>
+                {
+                    policy.AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowAnyOrigin();
+                });
+            });
 
             services.AddAuthentication(options =>
                 {
@@ -49,6 +58,7 @@ namespace MvcClient
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseCors("default");
             app.UseAuthentication();
 
             app.UseStaticFiles();

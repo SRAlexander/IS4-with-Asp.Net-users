@@ -17,7 +17,7 @@ namespace IS4Server.IS4
             return new List<IdentityResource>
             {
                 new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
+                new IdentityResources.Profile()
             };
         }
 
@@ -44,7 +44,7 @@ namespace IS4Server.IS4
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = {"api1"}
                 },
 
                 // resource owner password grant client
@@ -57,7 +57,7 @@ namespace IS4Server.IS4
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = {"api1"}
                 },
 
                 // OpenID Connect hybrid flow and client credentials client (MVC)
@@ -67,15 +67,15 @@ namespace IS4Server.IS4
                     ClientName = "MVC Client",
                     AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
 
-                    RequireConsent =  false,
+                    RequireConsent = false,
 
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
                     },
 
-                    RedirectUris = { "https://localhost:44362/signin-oidc" },
-                    PostLogoutRedirectUris = { "https://localhost:44362/signout-callback-oidc" },
+                    RedirectUris = {"https://localhost:44362/signin-oidc"},
+                    PostLogoutRedirectUris = {"https://localhost:44362/signout-callback-oidc"},
 
                     AllowedScopes =
                     {
@@ -84,6 +84,22 @@ namespace IS4Server.IS4
                         "api1"
                     },
                     AllowOfflineAccess = true
+                },
+                new Client
+                {
+                    ClientId = "ng",
+                    ClientName = "Angular 4 Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RedirectUris = new List<string> { "http://localhost:4200/auth-callback" },
+                    PostLogoutRedirectUris = new List<string> { "http://localhost:4200/" },
+                    AllowedCorsOrigins = new List<string> { "http://localhost:4200" },
+                    AllowAccessTokensViaBrowser = true,
+
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                    }
                 }
             };
         }
