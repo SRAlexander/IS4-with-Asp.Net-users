@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using System.Net.Http;
-using System.Security.Claims;
 using Newtonsoft.Json.Linq;
 using IdentityModel.Client;
 
@@ -13,7 +10,6 @@ namespace MvcClient.Controllers
 {
     public class HomeController : Controller
     {
-
         public IActionResult Index()
         {
             return View();
@@ -40,12 +36,12 @@ namespace MvcClient.Controllers
 
         public async Task<IActionResult> CallApiUsingClientCredentials()
         {
-            var tokenClient = new TokenClient("https://localhost:44379/connect/token", "mvc", "secret");
+            var tokenClient = new TokenClient("http://localhost:5000/connect/token", "mvc", "secret");
             var tokenResponse = await tokenClient.RequestClientCredentialsAsync("api1");
 
             var client = new HttpClient();
             client.SetBearerToken(tokenResponse.AccessToken);
-            var content = await client.GetStringAsync("https://localhost:44379/identity");
+            var content = await client.GetStringAsync("http://localhost:5001/identity");
 
             ViewBag.Json = JArray.Parse(content).ToString();
             return View("json");
@@ -57,7 +53,7 @@ namespace MvcClient.Controllers
 
             var client = new HttpClient();
             client.SetBearerToken(accessToken);
-            var content = await client.GetStringAsync("https://localhost:44379/identity");
+            var content = await client.GetStringAsync("http://localhost:5001/identity");
 
             ViewBag.Json = JArray.Parse(content).ToString();
             return View("json");

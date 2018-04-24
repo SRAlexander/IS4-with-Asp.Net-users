@@ -15,6 +15,7 @@ C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\bin\Debug\netcoreapp2.0\IS4Server.runtimeconfig.dev.json
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\bin\Debug\netcoreapp2.0\IS4Server.dll
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\bin\Debug\netcoreapp2.0\IS4Server.pdb
+C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\obj\Debug\netcoreapp2.0\IS4Server.csprojResolveAssemblyReference.cache
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\obj\Debug\netcoreapp2.0\IS4Server.csproj.CoreCompileInputs.cache
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\scott.alexander\Development\IS4-ASP.Net\IS4-with-Asp.Net-users\IS4-ASP.Net\IS4Server\obj\Debug\netcoreapp2.0\IS4Server.AssemblyInfoInputs.cache
