@@ -13057,11 +13057,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\scott.alexander\\Development\\IS4-ASP.Net\\IS4-with-Asp.Net-users\\IS4-ASP.Net\\IS4Server\\IS4Server.csproj",
+      "projectUniqueName": "C:\\Users\\scott.alexander\\source\\repos\\IS4-ASP.Net\\IS4Server\\IS4Server.csproj",
       "projectName": "IS4Server",
-      "projectPath": "C:\\Users\\scott.alexander\\Development\\IS4-ASP.Net\\IS4-with-Asp.Net-users\\IS4-ASP.Net\\IS4Server\\IS4Server.csproj",
+      "projectPath": "C:\\Users\\scott.alexander\\source\\repos\\IS4-ASP.Net\\IS4Server\\IS4Server.csproj",
       "packagesPath": "C:\\Users\\scott.alexander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\scott.alexander\\Development\\IS4-ASP.Net\\IS4-with-Asp.Net-users\\IS4-ASP.Net\\IS4Server\\obj\\",
+      "outputPath": "C:\\Users\\scott.alexander\\source\\repos\\IS4-ASP.Net\\IS4Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
