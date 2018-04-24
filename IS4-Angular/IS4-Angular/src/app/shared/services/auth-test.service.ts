@@ -4,17 +4,16 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
-import { AuthService } from './auth.service';
 
 @Injectable()
 export class AuthTestService {
 
   apiRoot : string = "https://localhost:44362/"
-  constructor(private _http : HttpClient, private _authService : AuthService) { }
+  constructor(private _http : HttpClient) { }
 
 
   OpenApiCall(): Observable<any> {
-    return this._http.get(this.apiRoot + "apiTest/open")
+    return this._http.get<any>(this.apiRoot + "apiTest/open")
       .do(data => {
         // Pre Process Data
       })
@@ -22,11 +21,9 @@ export class AuthTestService {
   }
 
   ClosedApiCall(): Observable<any> {
-    // let header = new HttpHeaders({ 'Authorization': this._authService.getAuthorizationHeaderValue() });
-    //     let options = ({ headers: header });
     return this._http.get<any>(this.apiRoot + "apiTest/closed")
       .do(data => {
-        console.log(data);
+        // Pre Process Data
       })
       .catch(this.handleError);
   }

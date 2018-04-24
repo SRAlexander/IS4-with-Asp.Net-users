@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
 import { UserManager, UserManagerSettings, User } from 'oidc-client';
-import { AuthHttp, AuthConfig, tokenNotExpired } from 'angular2-jwt';
-import { HttpRequest } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
 
   private manager: UserManager = new UserManager(getClientSettings());
   private user: User = null;
-  cachedRequests: Array<HttpRequest<any>> = [];
 
   constructor() { 
     this.manager.getUser().then(user => {
@@ -37,29 +34,6 @@ export class AuthService {
       this.user = user;
     });
   }
-
-  public getToken(): string {
-    var token = localStorage[0];
-    return token;
-  }
-  
-  public isAuthenticated(): boolean {
-    // get the token
-    const token = this.getToken();
-    // return a boolean reflecting 
-    // whether or not the token is expired
-    return tokenNotExpired(null, token);
-  }
-
-  public collectFailedRequest(request): void {
-    this.cachedRequests.push(request);
-  }
-  
-  public retryFailedRequests(): void {
-    // retry the requests. this method can
-    // be called after the token is refreshed
-  }
-
 }
 
 export function getClientSettings(): UserManagerSettings {
